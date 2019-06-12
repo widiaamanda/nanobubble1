@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "128504853828",
+    "firebase_url": "https://nanoapps-96b1b.firebaseio.com",
+    "project_id": "nanoapps-96b1b",
+    "storage_bucket": "nanoapps-96b1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128504853828:android:2435607ea757ebed",
+        "android_client_info": {
+          "package_name": "com.ditya.nanochat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128504853828-adacpl8ql3bp2uj8i988b3oi8s3c7acm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm6ZXj99E1_KJJjnO9z8A7DXlHoXucf_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128504853828-adacpl8ql3bp2uj8i988b3oi8s3c7acm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
