@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button btnLogin;
     private ProgressBar loginProgress;
     private FirebaseAuth mAuth;
-    private Intent HomeActivity;
+    private Intent AdminActivity;
     private ImageView loginPhoto;
 
     @Override
@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.loginBtn);
         loginProgress = findViewById(R.id.login_progress);
         mAuth = FirebaseAuth.getInstance();
-        HomeActivity = new Intent(this, com.ditya.nanochat.Activities.Home.class);
+        AdminActivity = new Intent(this, AdminActivity.class);
         loginPhoto = findViewById(R.id.login_photo);
         loginPhoto.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(mail.isEmpty() || password.isEmpty())
                 {
-                    showMessage("Please Verify All Field");
+                    showMessage("Masukkan Email/Password dengan benar");
                     btnLogin.setVisibility(View.VISIBLE);
                     loginProgress.setVisibility(View.INVISIBLE);
                 }
@@ -109,7 +109,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void updateUI() {
 
-        startActivity(HomeActivity);
+        startActivity(AdminActivity);
         finish();
 
     }

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Home">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgbr"
+        tools:context=".Navigasi2Activity">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/logonano"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.059" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="196dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bgtxt"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="8dp"
+            android:background='@drawable/bgtxt2'
+            app:layout_constraintBottom_toBottomOf="@+id/nomorhpbantuan"
+            app:layout_constraintEnd_toEndOf="@+id/nomorhpbantuan"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/nomorhpbantuan"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"
+            android:background='@drawable/bgtxt2'
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginBottom="@dimen/_275sdp"
+            android:background="@drawable/boxtit"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:background='@drawable/bgtxt2'
+            app:layout_constraintBottom_toBottomOf="@+id/isikeluhan"
+            app:layout_constraintEnd_toEndOf="@+id/isikeluhan"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/isikeluhan"
+            app:layout_constraintTop_toTopOf="@+id/isikeluhan"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/isikeluhan"
+            android:layout_width="@dimen/_215sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:background="@null"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:textColor="#050000"
+            android:textSize="14sp"
+            android:gravity="start"
+            app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <EditText
+            android:id="@+id/nomor"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:textColor="#050000"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/nomorhpbantuan"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#050000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="BUTUH BANTUAN?"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.541" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="20dp"
+            android:text="Nomor Handphone"
+            android:textColor="#1A0B7E"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Isi Keluhan"
+            android:textColor="#1A0B7E"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/nomorhpbantuan" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Nama"
+            android:textColor="#1A0B7E"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/kirimbutton"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/kirimtombol"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.904"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:layout_constraintVertical_bias="0.84" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <Button
+                android:id="@+id/berandabutton"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_7sdp"
+                android:background="@drawable/tombolberanda" />
+
+            <TextView
+                android:id="@+id/kosong"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:text="" />
+
+            <Button
+                android:id="@+id/keluarbutton"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_7sdp"
+                android:background="@drawable/keluartombol" />
+
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

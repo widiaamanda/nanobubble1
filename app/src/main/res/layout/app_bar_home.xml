@@ -8,19 +8,51 @@
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="37dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <Button
+                android:id="@+id/berandabutton"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_7sdp"
+                android:background="@drawable/tombolberanda" />
+
+            <TextView
+                android:id="@+id/kosong"
+                android:layout_width="122dp"
+                android:layout_height="match_parent"
+                android:text="" />
+
+            <Button
+                android:id="@+id/keluarbutton"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_7sdp"
+                android:background="@drawable/keluartombol" />
+
+
+        </LinearLayout>
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_home" />
+    <include
+        layout="@layout/content_home"
+        android:layout_height="670dp" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

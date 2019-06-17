@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Home">
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ProfileActivity">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_410sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/foto" />
+
+            <TextView
+                android:id="@+id/textViewPemilik"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_30sdp"
+
+                android:gravity="center"
+                android:text="Mr. Nawawi"
+                android:textColor="#34579D"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/bluebar" />
+
+            <TextView
+                android:id="@+id/tvprofilsaya"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:gravity="center"
+                android:text="Profil Saya"
+                android:textColor="#34579D"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/bluebar" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_51sdp"
+                android:layout_marginVertical="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:background="@drawable/foto"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                     />
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:background="@drawable/foto"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                     />
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:background="@drawable/foto"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="Koleksi Foto Tambak"
+                android:textColor="#34579D"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_140sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_95sdp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvnamalengkap"
+                        android:layout_width="@dimen/_95sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:gravity="start"
+                        android:text="Nama Lengkap"
+                        android:textColor="#34579D"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tvnamaalias"
+                        android:layout_width="@dimen/_95sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:gravity="start"
+                        android:text="Nama Alias "
+                        android:textColor="#34579D"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tvusia"
+                        android:layout_width="@dimen/_95sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:gravity="start"
+                        android:text="Sumber Pendanaan"
+                        android:textColor="#34579D"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tvnamalengkap"
+                        android:layout_width="@dimen/_95sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:gravity="start"
+                        android:text="Nomor Handphone"
+                        android:textColor="#34579D"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tvalamatlengkap"
+                        android:layout_width="@dimen/_95sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:gravity="start"
+                        android:text="Alamat Lengkap"
+                        android:textColor="#34579D"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tvnamalengkap"
+                        android:layout_width="@dimen/_95sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:gravity="start"
+                        android:textColor="#34579D"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tvnamalengkap"
+                        android:layout_width="@dimen/_95sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:gravity="start"
+                        android:textColor="#34579D"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tvnamalengkap"
+                        android:layout_width="@dimen/_95sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:gravity="start"
+                        android:text="Lokasi Tambak"
+                        android:textColor="#34579D"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idtitikdua"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_17sdp"
+                        android:gravity="center"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/idtitikdua"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_17sdp"
+                        android:gravity="center"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/idtitikdua"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_17sdp"
+                        android:gravity="center"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/idtitikdua"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_17sdp"
+                        android:gravity="center"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/idtitikdua"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_17sdp"
+                        android:gravity="center"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/idtitikdua"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_17sdp"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/idtitikdua2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_17sdp"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/idtitikdua3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_17sdp"
+                        android:gravity="center"
+                        android:text=":" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_140sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_17sdp"
+                        android:text="Nawawi Nababan" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_17sdp"
+                        android:text="Nawawi" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_17sdp" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_17sdp"
+                        android:text="082297271627" />
+
+                    <TextView
+                        android:id="@+id/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_51sdp"
+                        android:background="@null"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine"
+                        android:text="jalan jalan jalan jalan jalan jalan jalan jaln jalnjalan jalan jalan jalan jalan jalan jalan jaln jalnjalan jalan jalan jalan jalan jalan jalan jaln jalnjalan jalan jalan jalan jalan jalan jalan jaln jaln"
+                        android:maxLines="4"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView25"
+                            android:layout_width="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/locationicon" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="@dimen/_135sdp"
+                            android:layout_height="@dimen/_17sdp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:text="Delung, Situbondo" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:srcCompat="@drawable/bluebar" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_20sdp"
+
+            android:layout_marginTop="8dp"
+            android:background="@drawable/tombolubah"
+            app:layout_constraintEnd_toEndOf="@+id/imageView23"
+            app:layout_constraintStart_toStartOf="@+id/imageView23"
+            app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <Button
+                android:id="@+id/berandabutton"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_7sdp"
+                android:background="@drawable/tombolberanda" />
+
+            <TextView
+                android:id="@+id/kosong"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:text="" />
+
+            <Button
+                android:id="@+id/keluarbutton"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_7sdp"
+                android:background="@drawable/keluartombol" />
+
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

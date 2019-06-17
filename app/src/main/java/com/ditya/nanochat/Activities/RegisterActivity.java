@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ditya.nanochat.R;
@@ -40,6 +41,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private EditText userEmail, userPassword, userPassword2, userName;
     private ProgressBar loadingProgress;
+    private TextView userlogin;
     private Button regBtn, regBack;
 
     private FirebaseAuth mAuth;
@@ -65,20 +67,17 @@ public class RegisterActivity extends AppCompatActivity {
         loadingProgress = findViewById(R.id.regProgressBar);
 
         regBtn = findViewById(R.id.regBtn);
-        regBack = findViewById(R.id.regBack);
 
         loadingProgress.setVisibility(View.INVISIBLE);
 
 
         mAuth = FirebaseAuth.getInstance();
 
-        regBack.setOnClickListener(new View.OnClickListener(){
+        userlogin=(TextView)findViewById(R.id.tvlogin);
+        userlogin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                Intent loginActivity = new Intent(getApplicationContext(), LoginActivity.class);
-                startActivity(loginActivity);
-                finish();
+            public void onClick(View v) {
+                startActivity((new Intent(RegisterActivity.this,LoginActivity.class )));
             }
         });
 
@@ -97,7 +96,7 @@ public class RegisterActivity extends AppCompatActivity {
                 if(email.isEmpty() || name.isEmpty() || password.isEmpty() || !password.equals(password2))
                 {
 
-                    showMessage("Please verify all Fields.");
+                    showMessage("Tolong isi semua data.");
                     regBtn.setVisibility(View.VISIBLE);
                     loadingProgress.setVisibility(View.INVISIBLE);
 
@@ -212,8 +211,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void updateUI() {
 
-        Intent homeActivity = new Intent(getApplicationContext(), Home.class);
-        startActivity(homeActivity);
+        Intent LoginActivity = new Intent(getApplicationContext(), LoginActivity.class);
+        startActivity(LoginActivity);
         finish();
 
     }

@@ -17,6 +17,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -38,7 +39,9 @@ import org.w3c.dom.Text;
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-
+    private Button tombollogout;
+    private Button tombolberanda;
+    private Button tombolkeluar;
     FirebaseAuth mAuth;
     FirebaseUser currentUser;
 
@@ -60,12 +63,41 @@ public class Home extends AppCompatActivity
     DatabaseReference mPHRef = mRootRef.child("ph");
     DatabaseReference mSuhuRef = mRootRef.child("suhu");
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home2);
+
+        tombollogout =(Button)findViewById(R.id.nav_signout);
+        tombollogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                startActivity((new Intent(Home.this,LoginActivity.class )));
+            }
+        });
+        tombolberanda =(Button)findViewById(R.id.berandabutton);
+        tombolberanda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity((new Intent(Home.this,AdminActivity.class )));
+            }
+        });
+        tombolkeluar =(Button)findViewById(R.id.keluarbutton);
+        tombolkeluar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                moveTaskToBack(true);
+            }
+        });
+
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_home2);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -214,27 +246,6 @@ public class Home extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.home, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -243,29 +254,15 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-
-            getSupportActionBar().setTitle("Home");
-//            getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commit();
-
-
-
+            startActivity((new Intent(Home.this,AdminActivity.class )));
         } else if (id == R.id.nav_profile) {
-
-            getSupportActionBar().setTitle("Profile");
-//            getSupportFragmentManager().beginTransaction().replace(R.id.container, new ProfileFragment()).commit();
-
+            startActivity((new Intent(Home.this,ProfileActivity.class )));
         } else if (id == R.id.nav_settings) {
-
-            getSupportActionBar().setTitle("Settings");
-//            getSupportFragmentManager().beginTransaction().replace(R.id.container, new SettingsFragment()).commit();
-
-        } else if (id == R.id.nav_signout) {
-
-            FirebaseAuth.getInstance().signOut();
-            Intent loginActivity = new Intent(this, LoginActivity.class);
-            startActivity(loginActivity);
-            finish();
-
+            startActivity((new Intent(Home.this,SettingsActivity.class )));
+        } else if (id == R.id.nav_power) {
+            startActivity((new Intent(Home.this,PowerActivity.class )));
+        } else if (id == R.id.nav_analisa) {
+            startActivity((new Intent(Home.this,Home.class )));
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
