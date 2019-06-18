@@ -41,7 +41,7 @@
                 android:layout_height="@dimen/_30sdp"
 
                 android:gravity="center"
-                android:text="Mr. Nawawi"
+                android:text="Hardi Junaedi"
                 android:textColor="#34579D"
                 android:textSize="@dimen/_20sdp"
                 android:textStyle="bold" />
@@ -277,13 +277,13 @@
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_17sdp"
-                        android:text="Nawawi Nababan" />
+                        android:text="Hardi Junaedi" />
 
                     <TextView
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_17sdp"
-                        android:text="Nawawi" />
+                        android:text="Hardi" />
 
                     <TextView
                         android:id="@+id/textView11"
@@ -304,8 +304,8 @@
                         android:ems="10"
                         android:gravity="start|top"
                         android:inputType="textMultiLine"
-                        android:text="jalan jalan jalan jalan jalan jalan jalan jaln jalnjalan jalan jalan jalan jalan jalan jalan jaln jalnjalan jalan jalan jalan jalan jalan jalan jaln jalnjalan jalan jalan jalan jalan jalan jalan jaln jaln"
                         android:maxLines="4"
+                        android:text="Perum. Villa Pertiwi"
                         android:textSize="@dimen/_10sdp" />
 
                     <LinearLayout
@@ -328,7 +328,7 @@
                             android:layout_height="@dimen/_17sdp"
                             android:layout_gravity="bottom"
                             android:layout_marginLeft="@dimen/_2sdp"
-                            android:text="Delung, Situbondo" />
+                            android:text="Depok, Jawa Barat" />
                     </LinearLayout>
 
                 </LinearLayout>

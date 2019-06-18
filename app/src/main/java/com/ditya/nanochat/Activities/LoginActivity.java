@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.loginBtn);
         loginProgress = findViewById(R.id.login_progress);
         mAuth = FirebaseAuth.getInstance();
-        AdminActivity = new Intent(this, AdminActivity.class);
+        AdminActivity = new Intent(this, com.ditya.nanochat.Activities.Home.class);
         loginPhoto = findViewById(R.id.login_photo);
         loginPhoto.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -109,7 +109,10 @@ public class LoginActivity extends AppCompatActivity {
 
     private void updateUI() {
 
-        startActivity(AdminActivity);
+//        startActivity(AdminActivity);
+//        finish();
+        Intent homeActivity = new Intent(getApplicationContext(), AdminActivity.class);
+        startActivity(homeActivity);
         finish();
 
     }

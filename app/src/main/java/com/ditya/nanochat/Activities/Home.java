@@ -263,6 +263,11 @@ public class Home extends AppCompatActivity
             startActivity((new Intent(Home.this,PowerActivity.class )));
         } else if (id == R.id.nav_analisa) {
             startActivity((new Intent(Home.this,Home.class )));
+        } else if (id == R.id.logoutbutton) {
+            FirebaseAuth.getInstance().signOut();
+            Intent loginActivity = new Intent(this, LoginActivity.class);
+            startActivity(loginActivity);
+            finish();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

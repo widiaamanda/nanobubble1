@@ -37,10 +37,10 @@ public class AdminActivity extends AppCompatActivity {
             }
         });
 
-        tombolanalisa.setOnClickListener(new View.OnClickListener() {
+        tombolprof.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity((new Intent(AdminActivity.this,Home.class )));
+                startActivity((new Intent(AdminActivity.this,ProfileActivity.class )));
             }
         });
 
@@ -50,11 +50,15 @@ public class AdminActivity extends AppCompatActivity {
                 startActivity((new Intent(AdminActivity.this,PowerActivity.class )));
             }
         });
+//
 
-        tombolprof.setOnClickListener(new View.OnClickListener() {
+        tombolanalisa.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
-                startActivity((new Intent(AdminActivity.this,ProfileActivity.class )));
+            public void onClick(View view)
+            {
+                Intent loginActivity = new Intent(getApplicationContext(), Home.class);
+                startActivity(loginActivity);
+                finish();
             }
         });
 

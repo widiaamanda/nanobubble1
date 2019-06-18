@@ -16,7 +16,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ditya.nanochat.R;
@@ -41,7 +40,6 @@ public class RegisterActivity extends AppCompatActivity {
 
     private EditText userEmail, userPassword, userPassword2, userName;
     private ProgressBar loadingProgress;
-    private TextView userlogin;
     private Button regBtn, regBack;
 
     private FirebaseAuth mAuth;
@@ -67,17 +65,20 @@ public class RegisterActivity extends AppCompatActivity {
         loadingProgress = findViewById(R.id.regProgressBar);
 
         regBtn = findViewById(R.id.regBtn);
+        regBack = findViewById(R.id.regBack);
 
         loadingProgress.setVisibility(View.INVISIBLE);
 
 
         mAuth = FirebaseAuth.getInstance();
 
-        userlogin=(TextView)findViewById(R.id.tvlogin);
-        userlogin.setOnClickListener(new View.OnClickListener() {
+        regBack.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
-                startActivity((new Intent(RegisterActivity.this,LoginActivity.class )));
+            public void onClick(View view)
+            {
+                Intent loginActivity = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(loginActivity);
+                finish();
             }
         });
 
@@ -96,7 +97,7 @@ public class RegisterActivity extends AppCompatActivity {
                 if(email.isEmpty() || name.isEmpty() || password.isEmpty() || !password.equals(password2))
                 {
 
-                    showMessage("Tolong isi semua data.");
+                    showMessage("Please verify all Fields.");
                     regBtn.setVisibility(View.VISIBLE);
                     loadingProgress.setVisibility(View.INVISIBLE);
 
@@ -211,8 +212,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void updateUI() {
 
-        Intent LoginActivity = new Intent(getApplicationContext(), LoginActivity.class);
-        startActivity(LoginActivity);
+        Intent homeActivity = new Intent(getApplicationContext(), Home.class);
+        startActivity(homeActivity);
         finish();
 
     }
@@ -229,7 +230,7 @@ public class RegisterActivity extends AppCompatActivity {
     {
         if(ContextCompat.checkSelfPermission(RegisterActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE)
                 !=PackageManager.PERMISSION_GRANTED)
-            {
+        {
             if(ActivityCompat.shouldShowRequestPermissionRationale(RegisterActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE))
             {
                 Toast.makeText(RegisterActivity.this,"Please accept for required permission", Toast.LENGTH_SHORT).show();
@@ -238,9 +239,9 @@ public class RegisterActivity extends AppCompatActivity {
             {
                 ActivityCompat.requestPermissions(RegisterActivity.this,
                         new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
-                PReqCode);
+                        PReqCode);
             }
-    }
+        }
         else
         {
             openGallery();

@@ -86,7 +86,7 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:paddingLeft="10dip"
-        android:textColor="#7F7F80"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
