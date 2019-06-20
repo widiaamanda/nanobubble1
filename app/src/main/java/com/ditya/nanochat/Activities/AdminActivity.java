@@ -30,12 +30,6 @@ public class AdminActivity extends AppCompatActivity {
         tombolpower=(Button)findViewById(R.id.buttonpower);
         tombolbantuan=(Button)findViewById(R.id.buttonbantuan);
 
-        tombolbantuan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity((new Intent(AdminActivity.this,Navigasi2Activity.class )));
-            }
-        });
 
         tombolprof.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +42,13 @@ public class AdminActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity((new Intent(AdminActivity.this,PowerActivity.class )));
+            }
+        });
+
+        tombolbantuan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity((new Intent(AdminActivity.this,Navigasi2Activity.class )));
             }
         });
 //

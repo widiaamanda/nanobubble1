@@ -34,7 +34,7 @@ public class Navigasi2Activity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigasi2);
 
-        tombollogout =(Button)findViewById(R.id.nav_signout);
+        tombollogout =(Button)findViewById(R.id.logoutbutton);
         tombollogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
