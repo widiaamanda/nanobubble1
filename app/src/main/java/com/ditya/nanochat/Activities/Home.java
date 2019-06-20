@@ -134,6 +134,13 @@ public class Home extends AppCompatActivity
 
         updateNavHeader();
 
+        ImageView Pic1 = findViewById(R.id.foto);
+
+
+        // we will use Glide to load User Image
+        // import library
+
+        Glide.with(this).load(currentUser.getPhotoUrl()).into(Pic1);
 
     }
 
@@ -275,6 +282,7 @@ public class Home extends AppCompatActivity
         return true;
     }
 
+
     public void updateNavHeader()
     {
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -286,11 +294,15 @@ public class Home extends AppCompatActivity
         navUserMail.setText(currentUser.getEmail());
         navUserName.setText(currentUser.getDisplayName());
 
+
+
         // we will use Glide to load User Image
         // import library
 
         Glide.with(this).load(currentUser.getPhotoUrl()).into(navUserPhoto);
 
+
+//        Pic1 = navUserPhoto;
 
 
     }

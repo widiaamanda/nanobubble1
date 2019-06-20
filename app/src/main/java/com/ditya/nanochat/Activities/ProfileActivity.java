@@ -82,6 +82,20 @@ public class ProfileActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         updateNavHeader();
+
+        ImageView Pic1 = findViewById(R.id.foto);
+        ImageView Pic2 = findViewById(R.id.imageView19);
+        ImageView Pic3 = findViewById(R.id.imageView20);
+        ImageView Pic4 = findViewById(R.id.imageView21);
+
+
+        // we will use Glide to load User Image
+        // import library
+
+        Glide.with(this).load(currentUser.getPhotoUrl()).into(Pic1);
+        Glide.with(this).load(currentUser.getPhotoUrl()).into(Pic2);
+        Glide.with(this).load(currentUser.getPhotoUrl()).into(Pic3);
+        Glide.with(this).load(currentUser.getPhotoUrl()).into(Pic4);
     }
 
     @Override

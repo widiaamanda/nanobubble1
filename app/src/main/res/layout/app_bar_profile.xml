@@ -32,8 +32,7 @@
                 android:id="@+id/foto"
                 android:layout_width="@dimen/_100sdp"
                 android:layout_height="@dimen/_100sdp"
-                android:layout_gravity="center"
-                android:background="@drawable/foto" />
+                android:layout_gravity="center" />
 
             <TextView
                 android:id="@+id/textViewPemilik"
@@ -84,10 +83,8 @@
                     android:layout_width="@dimen/_10sdp"
                     android:layout_height="@dimen/_50sdp"
                     android:layout_marginLeft="@dimen/_20sdp"
-                    android:background="@drawable/foto"
-                    android:scaleType="fitXY"
                     android:layout_weight="1"
-                     />
+                    android:scaleType="fitXY" />
 
                 <ImageView
                     android:id="@+id/imageView20"
@@ -95,19 +92,16 @@
                     android:layout_height="@dimen/_50sdp"
                     android:layout_marginLeft="@dimen/_7sdp"
                     android:layout_marginRight="@dimen/_7sdp"
-                    android:background="@drawable/foto"
-                    android:scaleType="fitXY"
                     android:layout_weight="1"
-                     />
+                    android:scaleType="fitXY" />
 
                 <ImageView
                     android:id="@+id/imageView19"
                     android:layout_width="@dimen/_10sdp"
                     android:layout_height="@dimen/_50sdp"
                     android:layout_marginRight="@dimen/_20sdp"
-                    android:scaleType="fitXY"
                     android:layout_weight="1"
-                    android:background="@drawable/foto"
+                    android:scaleType="fitXY"
 
                     />
             </LinearLayout>
