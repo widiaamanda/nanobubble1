@@ -223,15 +223,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
                 android:text="PH Value"
                 android:textColor="#FFFFFF"
                 app:layout_constraintBottom_toTopOf="@+id/guideline6"
                 app:layout_constraintEnd_toStartOf="@+id/guideline11"
+                app:layout_constraintHorizontal_bias="0.3"
                 app:layout_constraintStart_toStartOf="@+id/guideline8"
                 app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
@@ -240,34 +241,34 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginLeft="@dimen/_4sdp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
                 android:text="DO Value"
                 android:textColor="#FFFFFF"
-                app:layout_constraintBottom_toTopOf="@+id/guideline6"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPH"
                 app:layout_constraintEnd_toStartOf="@+id/guideline12"
-                app:layout_constraintHorizontal_bias="0.529"
+                app:layout_constraintHorizontal_bias="0.17"
                 app:layout_constraintStart_toStartOf="@+id/guideline11"
-                app:layout_constraintTop_toTopOf="@+id/guideline7" />
+                app:layout_constraintTop_toTopOf="@+id/textViewPH"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/textViewSuhu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginLeft="@dimen/_4sdp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginRight="@dimen/_4sdp"
                 android:text="DegValue"
                 android:textColor="#FFFFFF"
-                app:layout_constraintBottom_toTopOf="@+id/guideline6"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPH"
                 app:layout_constraintEnd_toStartOf="@+id/guideline13"
+                app:layout_constraintHorizontal_bias="0.033"
                 app:layout_constraintStart_toStartOf="@+id/guideline12"
-                app:layout_constraintTop_toTopOf="@+id/guideline7"
+                app:layout_constraintTop_toTopOf="@+id/textViewPH"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
@@ -310,14 +311,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="312dp" />
+                app:layout_constraintGuide_begin="294dp" />
 
             <android.support.constraint.Guideline
                 android:id="@+id/guideline7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="278dp" />
+                app:layout_constraintGuide_begin="285dp" />
 
             <android.support.constraint.Guideline
                 android:id="@+id/guideline8"
