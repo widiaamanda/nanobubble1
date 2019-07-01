@@ -135,12 +135,14 @@ public class Home extends AppCompatActivity
         updateNavHeader();
 
         ImageView Pic1 = findViewById(R.id.foto);
+        TextView nama1 = findViewById(R.id.textViewPemilik);
 
 
         // we will use Glide to load User Image
         // import library
 
         Glide.with(this).load(currentUser.getPhotoUrl()).into(Pic1);
+        nama1.setText(currentUser.getDisplayName());
 
     }
 
@@ -149,18 +151,6 @@ public class Home extends AppCompatActivity
     {
         super.onStart();
 
-        mPemilikRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                String text = dataSnapshot.getValue(String.class);
-                mPemilikTextView.setText(text);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
 
         mNamaKolamRef.addValueEventListener(new ValueEventListener() {
             @Override

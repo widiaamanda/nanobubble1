@@ -222,53 +222,46 @@
                 android:id="@+id/textViewPH"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="@dimen/_4sdp"
-                android:layout_marginTop="@dimen/_4sdp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginRight="@dimen/_4sdp"
-                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
                 android:text="PH Value"
                 android:textColor="#FFFFFF"
-                app:layout_constraintBottom_toTopOf="@+id/guideline6"
-                app:layout_constraintEnd_toStartOf="@+id/guideline11"
-                app:layout_constraintHorizontal_bias="0.3"
-                app:layout_constraintStart_toStartOf="@+id/guideline8"
-                app:layout_constraintTop_toTopOf="@+id/guideline7" />
+                app:layout_constraintBottom_toBottomOf="@+id/textViewData"
+                app:layout_constraintEnd_toStartOf="@+id/textViewData"
+                app:layout_constraintHorizontal_bias="0.338"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+                app:layout_constraintTop_toTopOf="@+id/textViewData"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/textViewData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="@dimen/_4sdp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="@dimen/_4sdp"
-                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
                 android:text="DO Value"
                 android:textColor="#FFFFFF"
-                app:layout_constraintBottom_toBottomOf="@+id/textViewPH"
-                app:layout_constraintEnd_toStartOf="@+id/guideline12"
-                app:layout_constraintHorizontal_bias="0.17"
-                app:layout_constraintStart_toStartOf="@+id/guideline11"
-                app:layout_constraintTop_toTopOf="@+id/textViewPH"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+                app:layout_constraintTop_toTopOf="@+id/guideline14"
+                app:layout_constraintVertical_bias="0.302" />
 
             <TextView
                 android:id="@+id/textViewSuhu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginLeft="@dimen/_4sdp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
                 android:text="DegValue"
                 android:textColor="#FFFFFF"
-                app:layout_constraintBottom_toBottomOf="@+id/textViewPH"
-                app:layout_constraintEnd_toStartOf="@+id/guideline13"
-                app:layout_constraintHorizontal_bias="0.033"
-                app:layout_constraintStart_toStartOf="@+id/guideline12"
-                app:layout_constraintTop_toTopOf="@+id/textViewPH"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewData"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toEndOf="@+id/textViewData"
+                app:layout_constraintTop_toTopOf="@+id/textViewData"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
@@ -307,67 +300,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
             <android.support.constraint.Guideline
-                android:id="@+id/guideline6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_begin="294dp" />
-
-            <android.support.constraint.Guideline
-                android:id="@+id/guideline7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_begin="285dp" />
-
-            <android.support.constraint.Guideline
-                android:id="@+id/guideline8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_begin="43dp" />
-
-            <android.support.constraint.Guideline
-                android:id="@+id/guideline11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_begin="147dp" />
-
-            <android.support.constraint.Guideline
-                android:id="@+id/guideline12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_begin="262dp" />
-
-            <android.support.constraint.Guideline
-                android:id="@+id/guideline13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_begin="368dp" />
-
-            <android.support.constraint.Guideline
                 android:id="@+id/guideline14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layout_constraintGuide_begin="184dp" />
-
-            <android.support.constraint.Guideline
-                android:id="@+id/guideline15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_begin="155dp" />
-
-            <android.support.constraint.Guideline
-                android:id="@+id/guideline16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_begin="254dp" />
 
 
         </android.support.constraint.ConstraintLayout>

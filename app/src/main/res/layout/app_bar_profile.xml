@@ -343,17 +343,6 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout"
             app:srcCompat="@drawable/bluebar" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="@dimen/_60sdp"
-            android:layout_height="@dimen/_20sdp"
-
-            android:layout_marginTop="8dp"
-            android:background="@drawable/tombolubah"
-            app:layout_constraintEnd_toEndOf="@+id/imageView23"
-            app:layout_constraintStart_toStartOf="@+id/imageView23"
-            app:layout_constraintTop_toBottomOf="@+id/imageView23" />
-
 
     </android.support.constraint.ConstraintLayout>
 
