@@ -17,8 +17,9 @@
             android:id="@+id/nav_power"
             android:title="Power" />
         <item
-            android:id="@+id/nav_settings"
-            android:title="Settings" />
+            android:id="@+id/nav_bantuan"
+            android:title="Bantuan" />
+
     </group>
 
 </menu>

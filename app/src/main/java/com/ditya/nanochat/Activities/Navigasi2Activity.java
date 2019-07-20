@@ -106,10 +106,10 @@ public class Navigasi2Activity extends AppCompatActivity
             startActivity((new Intent(Navigasi2Activity.this,AdminActivity.class )));
         } else if (id == R.id.nav_profile) {
             startActivity((new Intent(Navigasi2Activity.this,ProfileActivity.class )));
-        } else if (id == R.id.nav_settings) {
-            startActivity((new Intent(Navigasi2Activity.this,SettingsActivity.class )));
         } else if (id == R.id.nav_power) {
             startActivity((new Intent(Navigasi2Activity.this,PowerActivity.class )));
+        } else if (id == R.id.nav_bantuan) {
+            startActivity((new Intent(Navigasi2Activity.this,Navigasi2Activity.class )));
         } else if (id == R.id.nav_analisa) {
             startActivity((new Intent(Navigasi2Activity.this,Home.class )));
         } else if (id == R.id.logoutbutton) {

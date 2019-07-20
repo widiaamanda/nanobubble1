@@ -105,12 +105,12 @@ public class PowerActivity extends AppCompatActivity
             startActivity((new Intent(PowerActivity.this,AdminActivity.class )));
         } else if (id == R.id.nav_profile) {
             startActivity((new Intent(PowerActivity.this,ProfileActivity.class )));
-        } else if (id == R.id.nav_settings) {
-            startActivity((new Intent(PowerActivity.this,SettingsActivity.class )));
         } else if (id == R.id.nav_power) {
             startActivity((new Intent(PowerActivity.this,PowerActivity.class )));
         } else if (id == R.id.nav_analisa) {
             startActivity((new Intent(PowerActivity.this,Home.class )));
+        } else if (id == R.id.nav_bantuan) {
+            startActivity((new Intent(PowerActivity.this,Navigasi2Activity.class )));
         } else if (id == R.id.logoutbutton) {
             FirebaseAuth.getInstance().signOut();
             Intent loginActivity = new Intent(this, LoginActivity.class);

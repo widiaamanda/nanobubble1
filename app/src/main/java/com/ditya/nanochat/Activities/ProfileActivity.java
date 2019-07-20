@@ -131,12 +131,12 @@ public class ProfileActivity extends AppCompatActivity
             startActivity((new Intent(ProfileActivity.this,AdminActivity.class )));
         } else if (id == R.id.nav_profile) {
             startActivity((new Intent(ProfileActivity.this,ProfileActivity.class )));
-        } else if (id == R.id.nav_settings) {
-            startActivity((new Intent(ProfileActivity.this,SettingsActivity.class )));
         } else if (id == R.id.nav_power) {
             startActivity((new Intent(ProfileActivity.this,PowerActivity.class )));
         } else if (id == R.id.nav_analisa) {
             startActivity((new Intent(ProfileActivity.this,Home.class )));
+        } else if (id == R.id.nav_bantuan) {
+            startActivity((new Intent(ProfileActivity.this,Navigasi2Activity.class )));
         } else if (id == R.id.logoutbutton) {
             FirebaseAuth.getInstance().signOut();
             Intent loginActivity = new Intent(this, LoginActivity.class);
